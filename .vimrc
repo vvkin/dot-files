@@ -33,5 +33,16 @@ Plugin 'jiangmiao/auto-pairs'
 " reduce tab size in .html
 autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
+" improve syntax highlighting
+Plugin 'sheerun/vim-polyglot'
+
+" frontend
+Plugin 'mattn/emmet-vim'
+
+" linter
+Plugin 'w0rp/ale'
+let b:ale_linters = ['flake8']
+let g:ale_python_flake8_use_global = 1
+
 call vundle#end()            " required
 filetype plugin indent on    " required
