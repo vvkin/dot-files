@@ -1,6 +1,5 @@
 syntax on
-colorscheme gruvbox
-set bg=dark
+colorscheme onehalfdark
 set tabstop=4
 set expandtab
 autocmd Filetype html setlocal tabstop=2
