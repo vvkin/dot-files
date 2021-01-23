@@ -41,8 +41,17 @@ Plugin 'mattn/emmet-vim'
 
 " linter
 Plugin 'w0rp/ale'
-let b:ale_linters = ['flake8']
-let g:ale_python_flake8_use_global = 1
+let g:ale_linters = {
+\    'javascript': ['eslint'],
+\    'python': ['flake8'],
+\}
+
+let g:ale_fixers = {
+\    'javascript': ['eslint'],
+\}
+
+let g:ale_fix_on_save = 1
+let g:ale_javascript_eslint_use_global = 1
 
 call vundle#end()            " required
 filetype plugin indent on    " required
